@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thùy Linh</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI", Arial, sans-serif;
+}
+
+body{
+overflow-x:hidden;
+
+/* ẢNH NỀN PINK AURA */
+background:url("bg4k.jpg") center/cover no-repeat fixed;
+}
+
+/* OVERLAY NHẸ CHO DỄ NHÌN */
+.overlay{
+min-height:100vh;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(8px);
+
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:60px 20px;
+}
+
+/* PROFILE FRAME */
+.profile-frame{
+width:100%;
+max-width:850px;
+
+/* GLASS TRẮNG */
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(20px);
+
+border-radius:24px;
+padding:30px;
+
+display:flex;
+align-items:center;
+gap:28px;
+
+border:1px solid rgba(255,255,255,0.9);
+box-shadow:0 10px 40px rgba(0,0,0,0.2);
+
+margin-bottom:40px;
+}
+
+/* AVATAR */
+.avatar-frame{
+width:150px;
+height:150px;
+border-radius:50%;
+padding:4px;
+background:linear-gradient(135deg,#ffd1ec,#ff9ad5);
+}
+
+.avatar-frame img{
+width:100%;
+height:100%;
+border-radius:50%;
+object-fit:cover;
+}
+
+/* TEXT */
+.profile-info h1{
+font-size:34px;
+color:#222;
+margin-bottom:8px;
+}
+
+.profile-info p{
+color:#444;
+margin-top:5px;
+}
+
+/* GRID */
+.grid{
+width:100%;
+max-width:900px;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:24px;
+}
+
+/* CARD TRẮNG MỜ */
+.card{
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(20px);
+
+border-radius:20px;
+padding:24px;
+
+border:1px solid rgba(255,255,255,0.9);
+box-shadow:0 8px 30px rgba(0,0,0,0.15);
+
+color:#222;
+}
+
+.card h3{
+font-size:22px;
+margin-bottom:12px;
+}
+
+/* IMAGE */
+.card img{
+width:100%;
+aspect-ratio:3/4;
+object-fit:cover;
+border-radius:14px;
+}
+
+/* MUSIC FULL */
+.music-wide{
+grid-column:1 / span 2;
+}
+
+iframe{
+width:100%;
+height:160px;
+border-radius:14px;
+border:none;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+.profile-frame{
+flex-direction:column;
+text-align:center;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.music-wide{
+grid-column:auto;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<!-- PROFILE -->
+<div class="profile-frame">
+
+<div class="avatar-frame">
+<img src="images/linh.jpg">
+</div>
+
+<div class="profile-info">
+<h1>Thùy Linh</h1>
+<p>Thông tin cá nhân</p>
+<p>Sở thích • Phong cách • Gu thẩm mỹ</p>
+</div>
+
+</div>
+
+<!-- CONTENT -->
+<div class="grid">
+
+<div class="card">
+<h3>Giới thiệu</h3>
+<p>
+ Manifest đỗ HNUE
+</p>
+</div>
+
+<div class="card">
+<h3>Sở thích</h3>
+<p>
+ Tham quan bảo tàng, đọc sách
+</p>
+</div>
+
+
+<div class="card music-wide">
+<h3>Nhạc yêu thích</h3>
+<iframe src="PASTE_SPOTIFY_EMBED"></iframe>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
